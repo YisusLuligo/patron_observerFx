@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="384.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.patronobserver.patronobserverapp.controller.Notificacion2Controller">
+   <children>
+      <TableView fx:id="tableProducto" layoutX="69.0" layoutY="165.0" prefHeight="211.0" prefWidth="369.0">
+        <columns>
+          <TableColumn fx:id="tbNombre" prefWidth="131.20001983642578" text="Nombre" />
+          <TableColumn fx:id="tbCodigo" prefWidth="109.5999755859375" text="Codigo" />
+            <TableColumn fx:id="tbCantidad" prefWidth="128.0" text="Cantidad" />
+        </columns>
+      </TableView>
+      <Label layoutX="192.0" layoutY="79.0" text="Empleado">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutY="145.0" prefHeight="1.0" prefWidth="507.0" />
+      <Label fx:id="labelEmpleado" layoutX="240.0" layoutY="119.0" />
+   </children>
+</AnchorPane>

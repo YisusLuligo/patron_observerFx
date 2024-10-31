@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="384.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.patronobserver.patronobserverapp.controller.Notificacion1Controller">
+   <children>
+      <TableView fx:id="tableProducto" layoutX="73.0" layoutY="164.0" prefHeight="182.0" prefWidth="361.0">
+        <columns>
+          <TableColumn fx:id="tbNombre" prefWidth="137.60004425048828" text="Nombre" />
+          <TableColumn fx:id="tbCodigo" prefWidth="115.199951171875" text="Codigo" />
+            <TableColumn fx:id="tbCantidad" prefWidth="108.0" text="Cantidad" />
+        </columns>
+      </TableView>
+      <Label layoutX="210.0" layoutY="60.0" prefHeight="42.0" prefWidth="87.0" text="Cliente ">
+         <font>
+            <Font name="Corbel" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutY="137.0" prefHeight="8.0" prefWidth="507.0" />
+      <Label fx:id="labelCliente" layoutX="240.0" layoutY="112.0" />
+   </children>
+</AnchorPane>

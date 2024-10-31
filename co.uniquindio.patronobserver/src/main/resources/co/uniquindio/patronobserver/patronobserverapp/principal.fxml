@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<?import javafx.scene.control.SplitPane?>
+<AnchorPane prefHeight="384.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.patronobserver.patronobserverapp.controller.PrincipalController">
+   <children>
+      <TabPane prefHeight="384.0" prefWidth="507.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Principal">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableProducto" layoutX="79.0" layoutY="199.0" prefHeight="148.0" prefWidth="330.0">
+                          <columns>
+                            <TableColumn fx:id="tbNombre" prefWidth="148.79999542236328" text="Nombre" />
+                            <TableColumn fx:id="tbCodigo" prefWidth="92.79998779296875" text="Codigo" />
+                              <TableColumn fx:id="tbCantidad" prefWidth="88.00006103515625" text="Cantidad" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="14.0" layoutY="18.0" text="Buscador" />
+                        <TextField fx:id="txtBuscadorProducto" layoutX="82.0" layoutY="14.0" prefHeight="26.0" prefWidth="179.0" promptText="Ingrese el codigo del producto" />
+                        <Button fx:id="btnBuscarProducto" layoutX="276.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBuscarProducto" text="Buscar" />
+                        <TextField fx:id="txtNombreProducto" layoutX="83.0" layoutY="64.0" prefHeight="26.0" prefWidth="179.0" promptText="Ingrese el nombre producto" />
+                        <TextField fx:id="txtCodigoProuducto" layoutX="82.0" layoutY="102.0" prefHeight="26.0" prefWidth="179.0" promptText="Ingrese el codigo producto" />
+                        <TextField fx:id="txtCantidadProducto" layoutX="82.0" layoutY="140.0" prefHeight="26.0" prefWidth="179.0" promptText="Ingrese la cantidad producto" />
+                        <Label layoutX="15.0" layoutY="68.0" text="Nombre" />
+                        <Label layoutX="15.0" layoutY="106.0" text="Codigo" />
+                        <Label layoutX="15.0" layoutY="144.0" text="Cantidad" />
+                        <Separator layoutX="6.0" layoutY="178.0" prefHeight="16.0" prefWidth="507.0" />
+                        <Separator layoutY="48.0" prefHeight="16.0" prefWidth="507.0" />
+                        <Button fx:id="btnActualizarProducto" layoutX="430.0" layoutY="140.0" mnemonicParsing="false" onAction="#onActualizarProducto" text="Actualizar" />
+                        <Button fx:id="btnAgregarProducto" layoutX="287.0" layoutY="140.0" mnemonicParsing="false" onAction="#onAgregarProducto" text="Agregar" />
+                        <Button fx:id="btnEliminarProducto" layoutX="357.0" layoutY="140.0" mnemonicParsing="false" onAction="#onEliminarProducto" text="Eliminar" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Notificacion-1">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610.0" prefWidth="744.0">
+                    <children>
+                        <SplitPane orientation="VERTICAL" prefHeight="558.0" prefWidth="926.0">
+                            <items>
+                                <fx:include source="notificacion1.fxml" />
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Notificacion-2">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610.0" prefWidth="744.0">
+                      <children>
+                          <SplitPane orientation="VERTICAL" prefHeight="558.0" prefWidth="926.0">
+                              <items>
+                                  <fx:include source="notificacion2.fxml" />
+                              </items>
+                          </SplitPane>
+                      </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
